@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <main class="flex-container">
+        <h1>Cadastrar novo gestor</h1>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Cadastro de Gestor</legend>
+                
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="telefone">Telefone</label>
+                <input type="number" name="telefone" id="telefone">
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

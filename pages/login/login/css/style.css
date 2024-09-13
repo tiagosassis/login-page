@@ -5,6 +5,8 @@
     --secundary-color: rgba(110, 109, 122, 0.4);
     --button-hover-color: #565564;
     --text-color: #fff;
+    --shadow-focused-color: rgba(13, 12, 34, 0.5);
+    --shadow-hover-color: rgba(234, 100, 217, 0.2);
 }
 
 *{
@@ -34,12 +36,6 @@ body{
     width: 415px;
 }
 
-#titulo{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
 label, input{
     display: block;
     width: 100%;
@@ -63,12 +59,13 @@ input{
 }
 
 #email:hover, #password:hover{
-    box-shadow: 0px 0px 0px 4px rgba(234, 100, 217, 0.2);
+    box-shadow: 0px 0px 0px 4px var(--shadow-hover-color);
     transition: 0.2s;
 }
 
 #email:focus-visible, #password:focus-visible{
-    box-shadow: 0px 0px 5px rgba(13, 12, 34, 0.5);
+    box-shadow: 0px 0px 5px var(--shadow-focused-color);
+    
 }
 
 input[type="submit"]{
