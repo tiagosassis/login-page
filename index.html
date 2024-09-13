@@ -13,13 +13,13 @@
                 Braseiro
             </h1>
         </div>
-        <div>
-            <form action="login.php" method="post">
+        <div id="login">
+            <form action="login.php" method="post" autocomplete="on">
                 <label for="email">Email</label>
-                <input type="text" name="email" id="email" required>
+                <input type="text" name="email" id="email" required autocomplete="email">
                 
                 <label for="password">Senha</label>
-                <input type="password" name="password" id="password" required>
+                <input type="password" name="password" id="password" required autocomplete="current-password">
     
                 <input type="submit" value="Entrar">
             </form>

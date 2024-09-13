@@ -23,12 +23,15 @@ body{
 .flex-container{
     height: 100%;
     width: 100%;
-    max-width: 40%;
-    padding: 10%;
+    
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
     justify-content: center;
-    align-items: stretch;
+}
+
+#login{
+    width: 415px;
 }
 
 #titulo{
