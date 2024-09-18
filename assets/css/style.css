@@ -84,6 +84,11 @@ input[type="submit"]:hover{
     transition: 0.4s;
 }
 
+input[type="submit"]:active{
+    animation-name: clickAnimation;
+    animation-duration: .1s;
+}
+
 p{
     font-size: 0.9em;
     text-align: right;
@@ -92,4 +97,13 @@ p{
 
 a{
     color: var(--primary-color);
+}
+
+@keyframes clickAnimation {
+    from{
+        scale:0.99;
+    }
+    to{
+        scale:1;
+    }
 }
