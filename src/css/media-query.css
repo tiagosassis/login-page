@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 425px) {
+    #title{
+        padding: 0px;
+        text-align: center;
+        gap: 10px;
+
+        p {
+            text-align: center;
+        }
+    }
+}

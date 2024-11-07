@@ -34,7 +34,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    text-align: left;
+    text-align: center;
+    line-height: 2.5em;
     padding-bottom: 60px;
 
     p {
@@ -44,7 +45,7 @@ body{
     }
 }
 
-#form-cadastro {
+#form-login {
     width: 100%;
 }
 

@@ -3,30 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/all.css">
+    <link rel="stylesheet" href="./src/css/login.css">
+    <link rel="stylesheet" href="../../src/css/media-query.css">
     <title>Login</title>
 </head>
 <body>
     <main class="flex-container">
-        <div id="title">
-            <h1>
-                Login<br>Gerenciador de Relatórios
-            </h1>
-        </div>
-        <div id="form">
-            <form action="./pages/php/login_process.php" method="POST" autocomplete="on">
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email" required autocomplete="email">
-                
-                <label for="password">Senha</label>
-                <input type="password" name="password" id="password" required autocomplete="current-password">
-    
-                <input type="submit" value="Entrar">
-            </form>
-            <p>
-                Não tem uma conta? <a href="./pages/html/cadastro.html">Criar conta</a>
-            </p>
-        </div>
+        <section class="flex-container">
+            <div id="title" class="flex-item">
+                <h1>
+                    Login<br>Gerenciador de Relatórios
+                </h1>
+            </div>
+            <div id="form-login" class="flex-item">
+                <form action="./pages/php/login_process.php" method="POST" autocomplete="on">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" required autocomplete="email">
+            
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password" required autocomplete="current-password">
+                    <input type="submit" value="Entrar">
+                </form>
+                <p>
+                    Não tem uma conta? <a href="./pages/html/cadastro.html">Criar conta</a>
+                </p>
+            </div>
+        </section>
     </main>
 </body>
 </html>
