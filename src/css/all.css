@@ -22,10 +22,11 @@ body{
     align-content: center;
     flex-flow: row wrap;
     gap: 30px;
-}
 
-section.flex-container{
-    width: 90%;
+    section {
+        height: 100%;
+        width: 90%;
+    }
 }
 
 #title{
@@ -33,14 +34,23 @@ section.flex-container{
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: 10px;
-    width: 425px;
+    text-align: left;
     padding-bottom: 60px;
-    text-align: center;
+
+    p {
+        font-size: 1em;
+        color: var(--primary-color);
+        text-align: left;
+    }
 }
 
-#form{
-    width: 425px;
+#form-cadastro {
+    width: 100%;
+}
+
+.flex-item {
+    flex: 0 1 auto;
+    max-width: 425px;
 }
 
 label, input{
