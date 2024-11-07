@@ -1,13 +1,5 @@
 @charset "utf-8";
-
-:root{
-    --primary-color: #0d0c22;
-    --secundary-color: rgba(110, 109, 122, 0.4);
-    --button-hover-color: #565564;
-    --text-color: #fff;
-    --shadow-focused-color: rgba(13, 12, 34, 0.5);
-    --shadow-hover-color: rgba(234, 100, 217, 0.2);
-}
+@import url('./variables.css');
 
 *{
     margin: 0px;
@@ -32,7 +24,7 @@ body{
     justify-content: center;
 }
 
-#login{
+div#form-cadastro, div#form-login{
     width: 415px;
 }
 

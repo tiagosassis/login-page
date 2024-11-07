@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de Campos Dispersos</title>
+    <style>
+        /* Apenas para mostrar os campos espalhados */
+        #campo1 { position: absolute; top: 50px; left: 50px; }
+        #campo2 { position: absolute; top: 150px; right: 50px; }
+        #botaoEnviar { position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%); }
+    </style>
+</head>
+<body>
+
+    <!-- Inputs sem formulário único ao redor -->
+    <input type="text" id="campo1" name="nome" placeholder="Nome" required>
+    <input type="email" id="campo2" name="email" placeholder="Email" required>
+
+    <!-- Botão de envio -->
+    <button id="botaoEnviar" type="button" onclick="enviarDados()">Enviar</button>
+
+    <script>
+        function enviarDados() {
+            const formData = new FormData();
+
+            // Adiciona os dados manualmente
+            formData.append("nome", document.getElementById("campo1").value);
+            formData.append("email", document.getElementById("campo2").value);
+
+            // Envia os dados combinados
+            fetch('processa_dados.php', {
+                method: 'POST',
+                body: formData
+            }).then(response => {
+                if (response.ok) {
+                    alert("Dados enviados com sucesso!");
+                } else {
+                    alert("Erro ao enviar os dados.");
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

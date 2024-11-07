@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../src/css/cadastro.css">
+    <title>Login</title>
+</head>
+<body>
+    <main class="flex-container">
+        <section class="flex-container">
+            <div id="title">
+                <h1>
+                    Crie sua conta<br>Gerenciador de Relatórios
+                </h1>
+                <p>
+                    Maior praticidade para criar, visualizar e gerenciar relatórios
+                </p>
+            </div>
+            <div id="form-cadastro">
+                <form action="../php/cadastro_process.php" method="POST" autocomplete="on">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" required autocomplete="name">
+    
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" required autocomplete="email">
+                    
+                    <label for="password">Digite sua Senha</label>
+                    <input type="password" name="password" id="password" required autocomplete="new-password" minlength="4" maxlength="30">
+
+                    <label for="password">Digite a senha novamente</label>
+                    <input type="password" name="password" id="password" required autocomplete="new-password" minlength="4" maxlength="30">
+        
+                    <input type="submit" name="submit" value="Cadastrar">
+                </form>
+                <p>
+                    Ja tem uma conta? <a href="../../index.html">Entrar</a>
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./src/css/all.css">
     <title>Login</title>
 </head>
 <body>
     <main class="flex-container">
         <h1>
-            Braseiro
+            Login - Gerenciador de Relatórios
         </h1>
-        <div id="login">
-            <form action="login.php" method="post" autocomplete="on">
+        <div id="form-login">
+            <form action="./pages/php/login_process.php" method="POST" autocomplete="on">
                 <label for="email">Email</label>
                 <input type="text" name="email" id="email" required autocomplete="email">
                 
@@ -22,7 +22,7 @@
                 <input type="submit" value="Entrar">
             </form>
             <p>
-                Não tem uma conta? <a href="cadastro.html">Criar conta</a>
+                Não tem uma conta? <a href="./pages/html/cadastro.html">Criar conta</a>
             </p>
         </div>
     </main>
