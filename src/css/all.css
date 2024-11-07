@@ -1,0 +1,18 @@
+form > div{
+    position: relative;
+}
+
+span.material-symbols-outlined {
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    cursor: pointer;
+}
+
+#title {
+    text-align: center;
+}
+
+.display-none {
+    display: none !important;
+}
