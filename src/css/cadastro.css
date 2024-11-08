@@ -37,6 +37,7 @@ body{
     align-items: start;
     text-align: left;
     padding-bottom: 60px;
+    gap: 10px;
 
     h1 {
         width: 100%;
@@ -99,6 +100,7 @@ input[type="submit"]{
     border: none;
     cursor: pointer;
     margin: 25px 0px;
+    padding: 0px;
 }
 
 input[type="submit"]:hover{
