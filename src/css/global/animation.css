@@ -1,0 +1,8 @@
+@keyframes clickAnimation {
+    from{
+        scale:0.99;
+    }
+    to{
+        scale:1;
+    }
+}
