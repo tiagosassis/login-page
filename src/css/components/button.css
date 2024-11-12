@@ -1,7 +1,7 @@
-@import url('./global/reset.css');
-@import url('./global/typography.css');
-@import url('./global/animation.css');
-@import url('./global/variables.css');
+@import url('../global/reset.css');
+@import url('../global/typography.css');
+@import url('../global/animation.css');
+@import url('../global/variables.css');
 
 input[type="submit"]{
     font-size: 1.2em;
