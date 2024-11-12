@@ -24,15 +24,15 @@
                     <div>
                         <label for="password">Senha</label>
                         <input class="password" type="password" name="password" id="password" required autocomplete="current-password">
-                        <span class="material-symbols-outlined password-visibility-on" data-icon="visibility">
+                        <span class="material-symbols-outlined password-visibility" data-icon="visibility">
                             visibility
                         </span>
-                        <span class="material-symbols-outlined display-none password-visibility-off" data-icon="visibility_off">
+                        <span class="material-symbols-outlined display-none password-visibility" data-icon="visibility_off">
                             visibility_off
                         </span>
                     </div>
 
-                    <input type="submit" value="Entrar">
+                    <input id="btn-login" type="submit" value="Entrar" disabled>
                 </form>
                 <p class="subtext">
                     Não tem uma conta? <a href="./pages/html/cadastro.html">Criar conta</a>
@@ -41,6 +41,6 @@
         </section>
     </main>
     
-    <script src="./src/scripts/scripts.js"></script>
+    <script type="module" src="./src/scripts/scripts.js"></script>
 </body>
 </html>
