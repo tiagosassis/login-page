@@ -1,5 +1,7 @@
+import { myFunction } from "./validateForm.js";
+
 document.addEventListener('DOMContentLoaded', () =>{
-    const spans = document.querySelectorAll('span.material-symbols-outlined')
+    const spans = document.querySelectorAll('span.material-symbols-outlined.password-visibility')
 
     spans.forEach((span) => {
         span.addEventListener('click', () => {
@@ -8,8 +10,10 @@ document.addEventListener('DOMContentLoaded', () =>{
     })
 })
 
+document.querySelector('form').addEventListener('input', myFunction)
+
 function togglePasswordVisibility(span) {
-    span.closest('div').querySelectorAll('span.material-symbols-outlined').forEach((icon) => {
+    span.closest('div').querySelectorAll('span.material-symbols-outlined.password-visibility').forEach((icon) => {
         icon.classList.toggle('display-none')
     })
 
