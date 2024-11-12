@@ -81,7 +81,7 @@ input{
     outline: none;
 }
 
-#email:hover, #password:hover{
+input:hover{
     box-shadow: 0px 0px 0px 4px var(--shadow-hover-color);
     transition: 0.2s;
 }
@@ -104,6 +104,7 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
+    box-shadow: none;
     background-color: var(--button-hover-color);
     transition: 0.4s;
 }
@@ -130,4 +131,11 @@ a{
     to{
         scale:1;
     }
+}
+
+#submit-form[disabled] {
+    background-color: #ccc;  /* Cor de fundo cinza */
+    color: #999;             /* Cor do texto em cinza */
+    cursor: not-allowed;     /* Cursor de "não permitido" */
+    opacity: 0.6;            /* Deixa o botão semitransparente */
 }
