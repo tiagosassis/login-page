@@ -1,0 +1,34 @@
+@import url('./global/reset.css');
+@import url('./global/typography.css');
+@import url('./global/animation.css');
+@import url('./global/variables.css');
+
+input[type="submit"]{
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: var(--btn-anabled-bg-color);
+    color: var(--btn-text-color);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    margin: 25px 0px;
+    padding: 0px;
+}
+
+input[type="submit"]:hover{
+    box-shadow: none;
+    background-color: var(--btn-hover-color);
+    transition: 0.4s;
+}
+
+input[type="submit"]:active{
+    animation-name: clickAnimation;
+    animation-duration: .1s;
+}
+
+input[type="submit"][disabled] {
+    background-color: var(--btn-desabled-bg-color);
+    color: var(--btn-text-color);
+    cursor: not-allowed;
+    opacity: 0.8;
+}
