@@ -1,19 +1,10 @@
 @charset "utf-8";
-@import url('./variables.css');
+@import url('./global/reset.css');
+@import url('./global/typography.css');
+@import url('./global/animation.css');
+@import url('./global/variables.css');
+@import url('./components/button.css');
 @import url('./all.css');
-
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-body{
-    height: 100vh;
-    width: 100vw;
-    color: var(--primary-color);
-}
 
 .flex-container{
     height: 100%;
@@ -45,7 +36,6 @@ body{
 
     p {
         font-size: 1em;
-        color: var(--primary-color);
         text-align: left;
     }
 }
@@ -77,65 +67,19 @@ input{
     margin-bottom: 25px;
     height: 50px;
     border-radius: 10px;
-    border: 1px solid var(--secundary-color);
+    border: 1px solid var(--input-border-color);
     outline: none;
 }
 
 input:hover{
-    box-shadow: 0px 0px 0px 4px var(--shadow-hover-color);
-    transition: 0.2s;
+    box-shadow: 0px 0px 5px 4px var(--box-shadow-hover-color);
 }
 
-#email:focus-visible, #password:focus-visible{
-    box-shadow: 0px 0px 5px var(--shadow-focused-color);
-    
+input:focus-visible{
+    box-shadow: 0px 0px 5px var(--box-shadow-focused-color);
 }
 
-input[type="submit"]{
-    font-size: 1em;
-    font-weight: 700;
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    margin: 25px 0px;
-    padding: 0px;
-}
-
-input[type="submit"]:hover{
-    box-shadow: none;
-    background-color: var(--button-hover-color);
-    transition: 0.4s;
-}
-
-input[type="submit"]:active{
-    animation-name: clickAnimation;
-    animation-duration: .1s;
-}
-
-p{
-    font-size: 0.9em;
+p.subtext {
     text-align: right;
-    color: var(--button-hover-color);
 }
 
-a{
-    color: var(--primary-color);
-}
-
-@keyframes clickAnimation {
-    from{
-        scale:0.99;
-    }
-    to{
-        scale:1;
-    }
-}
-
-#submit-form[disabled] {
-    background-color: #ccc;  /* Cor de fundo cinza */
-    color: #999;             /* Cor do texto em cinza */
-    cursor: not-allowed;     /* Cursor de "não permitido" */
-    opacity: 0.6;            /* Deixa o botão semitransparente */
-}
