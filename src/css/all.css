@@ -2,7 +2,7 @@ form > div{
     position: relative;
 }
 
-span.material-symbols-outlined.password-visibility-off, span.material-symbols-outlined.password-visibility-on {
+span.material-symbols-outlined.password-visibility {
     position: absolute;
     top: 43px;
     right: 15px;
