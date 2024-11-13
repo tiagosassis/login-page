@@ -4,7 +4,6 @@
     $password = "";
     $dbname = "formulario_login";
 
-    // Cria a conexão
     $conn = new mysqli($host, $user, $password, $dbname);
 
     // Verifica a conexão
