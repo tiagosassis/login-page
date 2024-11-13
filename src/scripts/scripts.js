@@ -1,33 +1,24 @@
-import { myFunction } from "./validateForm.js";
+import { toggleDisabledLoginBtn, validateEmail, restrictEmailInput, restrictPasswordInput } from "./validateForm.js";
+import { togglePasswordVisibility } from "./utils.js";
 
 document.addEventListener('DOMContentLoaded', () =>{
     const spans = document.querySelectorAll('span.material-symbols-outlined.password-visibility')
-
     spans.forEach((span) => {
         span.addEventListener('click', () => {
             togglePasswordVisibility(span)
         })
     })
-})
 
-document.querySelector('form').addEventListener('input', myFunction)
+    document.querySelector('form').addEventListener('submit', (event) => {
+        const isEmailValid = validateEmail()
 
-function togglePasswordVisibility(span) {
-    span.closest('div').querySelectorAll('span.material-symbols-outlined.password-visibility').forEach((icon) => {
-        icon.classList.toggle('display-none')
+        if (!isEmailValid) {
+            event.preventDefault() // Impede o envio do formulário se o e-mail for inválido
+        }
     })
 
-    const input = span.closest('div').querySelector('input.password')
-
-    if (input) {
-        if(input.type == 'password'){
-            input.setAttribute('type', 'text')
-        }
-        else {
-            input.setAttribute('type', 'password')
-        }
-    }
-    else {
-        console.warn('Erro na função togglePasswordVisibility')
-    }
-}
+    document.getElementById('email').addEventListener('input', restrictEmailInput);
+    document.querySelector('form').addEventListener('input', toggleDisabledLoginBtn)
+    document.getElementById('password').addEventListener('input', restrictPasswordInput)
+    
+})
