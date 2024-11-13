@@ -1,0 +1,34 @@
+.flex-column-wrap{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.flex-column-nowrap{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.flex-row-wrap{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.flex-row-nowrap{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.flex-item-password-label{
+    flex: 0 1 25%;
+}
+
+.flex-item-alert-message{
+    flex: 0 1 75%;
+    text-align: right;
+}
+
+.flex-item-password-input{
+    flex: 0 1 auto;
+}
