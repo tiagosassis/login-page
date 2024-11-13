@@ -4,6 +4,7 @@
 @import url('./global/animation.css');
 @import url('./global/variables.css');
 @import url('./components/button.css');
+@import url('./layout/flexbox.css');
 
 @import url('./all.css');
 
