@@ -3,7 +3,7 @@ export function toggleDisabledLoginBtn() {
     const email = document.querySelector('input#email')
     const password = document.querySelector('input#password')
 
-    if (email.value.length >= 1 && password.value.length >= 1) {
+    if (email.value.length >= 15 && password.value.length >= 6) {
         btn.disabled = false
     } else {
         btn.disabled = true
@@ -11,6 +11,7 @@ export function toggleDisabledLoginBtn() {
 }
 
 export function validateEmail() {
+    console.log('function')
     const inputEmail = document.getElementById('email')
     const isValid = /^[^\s@]+@[^\s@]+\.com/.test(inputEmail.value);
 
