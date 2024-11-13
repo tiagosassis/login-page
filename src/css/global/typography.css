@@ -33,12 +33,13 @@ h3 {
 
 p {
     font-size: 1em;
-    line-height: 1.6;
+    line-height: 1.6em;
     color: var(--secondary-text-color);
 }
 
 p.subtext {
     font-size: 0.875em;
+    padding-top: 2px;
     color: var(--secondary-text-color);
 }
 
