@@ -20,7 +20,7 @@
     justify-content: space-between;
 }
 
-.flex-item-password-label{
+.flex-item-label{
     flex: 0 1 25%;
 }
 
@@ -29,6 +29,6 @@
     text-align: right;
 }
 
-.flex-item-password-input{
+.flex-item-input{
     flex: 0 1 auto;
 }
