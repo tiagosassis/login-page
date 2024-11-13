@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            margin-top: 30px;
+            width: 90%;
+            max-width: 800px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+        .welcome-message {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .logout {
+            background-color: #d9534f;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .logout:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Dashboard</h1>
+</div>
+
+<div class="container">
+    <div class="welcome-message">
+        Bem-vindo(a) à sua Dashboard!
+    </div>
+    <p>Aqui estão algumas opções e informações do seu perfil:</p>
+    <ul>
+        <li>Ver detalhes do perfil</li>
+        <li>Configurações de conta</li>
+        <li>Histórico de atividades</li>
+        <li>Suporte ao cliente</li>
+    </ul>
+    <a href="logout.php" class="logout">Sair</a>
+</div>
+
+</body>
+</html>
