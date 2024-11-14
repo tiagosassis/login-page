@@ -23,11 +23,9 @@
     if($qtd > 0){
         $_SESSION['email'] = $email;
         $_SESSION['name'] = $row -> nome;
-        header('Location: ../../html/dashboard.html');
+        header('Location: ../html/dashboard.html');
     }
     else{
         header('Location: ../../index.html');
     }
-
-
 ?>
