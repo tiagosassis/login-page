@@ -3,7 +3,7 @@ export function toggleDisabledLoginBtn() {
     const email = document.querySelector('input#email')
     const password = document.querySelector('input#password')
 
-    if (email.value.length >= 1 && password.value.length >= 1) {
+    if (email.value.length >= 10 && password.value.length >= 4) {
         btn.disabled = false
     } else {
         btn.disabled = true
